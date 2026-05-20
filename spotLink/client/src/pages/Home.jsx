@@ -15,12 +15,6 @@ const features = [
   { icon: HiOutlineBell, title: 'Live Alerts', desc: 'Get notified instantly when a spot opens up near you with vacate alerts.', color: 'from-indigo-500 to-violet-400' }
 ];
 
-const stats = [
-  { value: '10K+', label: 'Parking Spots' },
-  { value: '50K+', label: 'Happy Drivers' },
-  { value: '200+', label: 'Societies' },
-  { value: '99.9%', label: 'Uptime' }
-];
 
 const steps = [
   { num: '01', icon: HiOutlineSearch, title: 'Search', desc: 'Find available parking near your destination using our smart map and filters.', color: 'from-blue-500 to-cyan-400' },
@@ -71,17 +65,6 @@ const Home = () => {
               </Link>
             </div>
 
-            {/* Stats */}
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }}>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, maxWidth: 700, margin: '0 auto' }}>
-                {stats.map((s, i) => (
-                  <div key={i} className="glass card-hover" style={{ borderRadius: 16, padding: '20px 16px', textAlign: 'center' }}>
-                    <div className="gradient-text" style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, marginBottom: 4 }}>{s.value}</div>
-                    <div style={{ fontSize: 13, color: 'rgba(226,232,240,0.45)', fontWeight: 500 }}>{s.label}</div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </section>
