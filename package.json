@@ -1,0 +1,9 @@
+{
+  "name": "spotlink-root",
+  "version": "1.0.0",
+  "description": "Root runner for SpotLink",
+  "scripts": {
+    "dev": "npm run dev --prefix spotLink/client",
+    "server": "npm run dev --prefix spotLink/server"
+  }
+}
